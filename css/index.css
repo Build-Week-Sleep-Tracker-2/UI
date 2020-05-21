@@ -101,13 +101,18 @@ header .container {
 }
 header .container h1 {
   color: white;
+  text-align: center;
 }
 header .container h2 {
   color: white;
 }
 header .container nav {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 header .container nav a {
+  color: white;
   text-decoration: none;
+  padding: 1%;
 }

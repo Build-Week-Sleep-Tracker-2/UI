@@ -89,3 +89,30 @@ video {
 * {
   font-size: 62l 0.5%;
 }
+header {
+  border: 1px solid blue;
+  width: 100%;
+  height: 30%;
+}
+header .container {
+  background: #286662;
+  width: 100%;
+  border: 1px solid orange;
+}
+header .container h1 {
+  color: white;
+  text-align: center;
+}
+header .container h2 {
+  color: white;
+}
+header .container nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .container nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+}
