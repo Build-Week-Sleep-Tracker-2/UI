@@ -1,3 +1,11 @@
-.size(){
-    
+.custom-layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+    align-items: @align;
 }
+.size(@height, @width){
+    height: @height;
+    width: @width;
+}
+@tablet: ~"@media(max-width: 800px;)";
+@mobile: ~"@media(max-width: 500px;)";
