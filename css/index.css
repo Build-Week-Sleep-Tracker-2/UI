@@ -90,17 +90,24 @@ video {
   font-size: 62l 0.5%;
 }
 header {
-  border: 1px solid blue;
   height: 10%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-header h1 {
+header .brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header .brand img {
+  width: 50px;
+  padding-right: 1%;
+}
+header .brand h1 {
   color: whitesmoke;
   font-size: 2rem;
   width: 20%;
-  text-align: top-right;
 }
 header nav {
   font-size: 1.2rem;
@@ -127,7 +134,7 @@ header h2 {
 }
 header h2 span {
   font-weight: bolder;
-  font-family: 'Caveat', cursive;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   background: #172031;
@@ -145,49 +152,66 @@ body .flex-container1 .flex-item1 {
   padding-top: 2%;
 }
 body .flex-container1 .flex-item2 {
-  font-family: 'Caveat', cursive;
-  font-size: 1.5rem;
   color: whitesmoke;
-  height: 40%;
+  height: 45%;
   width: 20%;
-  line-height: 3vh;
   padding: 6%;
+  font-size: 1.4rem;
 }
-body .middle {
+@media (max-width: 800px) {
+  body .flex-container1 .flex-item2 {
+    height: 7%;
+    width: 40%;
+    font-size: 1rem;
+  }
+}
+.middle {
   text-align: center;
   width: 50%;
   color: whitesmoke;
   margin-left: 25%;
-  font-size: 1.5rem;
-  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
   padding-top: 3%;
 }
-body .flex-container2 {
+@media (max-width: 800px) {
+  .middle {
+    height: 7%;
+    width: 40%;
+    font-size: 1rem;
+  }
+}
+.flex-container2 {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-body .flex-container2 .flex2-item1 {
+.flex-container2 .flex2-item1 {
   height: 20%;
   width: 20%;
   margin-top: 4%;
   padding-top: 1%;
 }
-body .flex-container2 p {
-  font-size: 1.5rem;
+.flex-container2 p {
+  font-size: 1.4rem;
   color: whitesmoke;
   height: 45%;
   width: 20%;
-  line-height: 100%;
   padding: 6%;
-  font-family: 'Caveat', cursive;
+  font-family: 'Poppins', sans-serif;
 }
-body .flex-container2 .flex2-item2 {
+@media (max-width: 800px) {
+  .flex-container2 p {
+    font-size: 1rem;
+  }
+}
+.flex-container2 .flex2-item2 {
   height: 20%;
   width: 20%;
   padding-top: 4%;
+  line-height: 10%;
 }
-body footer {
+footer {
   height: 50%;
   width: 100%;
   margin-bottom: auto;
@@ -199,7 +223,7 @@ body footer {
   flex-wrap: no-wrap;
   flex-direction: column;
 }
-body footer .team {
+footer .team {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.6rem;
@@ -211,23 +235,42 @@ body footer .team {
   margin-top: 1%;
   padding: 1%;
 }
-body footer p {
+footer p {
   width: 15%;
   text-align: center;
   font-weight: bold;
   padding: 1%;
   line-height: 3vh;
   font-weight: bolder;
+  font-size: 1.2rem;
 }
-body footer section {
+@media (max-width: 800px) {
+  footer p {
+    height: 7%;
+    width: 40%;
+    background-color: #bfbfbf;
+    font-size: 1rem;
+  }
+}
+footer section {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   width: 100%;
 }
-body footer section .git {
+footer section .git {
   width: 5vw;
 }
-body footer section .facebook {
+@media (max-width: 500px) {
+  footer section .git {
+    background-color: #bfbfbf;
+  }
+}
+footer section .facebook {
   width: 5vw;
+}
+@media (max-width: 800px) {
+  footer section .facebook {
+    background-color: #bfbfbf;
+  }
 }
