@@ -1,0 +1,11 @@
+.flex(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+    align-items: @align;
+}
+.size(@height, @width){
+    height: @height;
+    width: @width;
+}
+@mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
