@@ -125,8 +125,6 @@ header .nav-links li a {
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
-  border: 1px solid white;
-  border-radius: 20%;
   box-sizing: borderbox;
 }
 header h2 {
@@ -138,7 +136,7 @@ header h2 span {
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   header .line {
     width: 30px;
     height: 3px;
