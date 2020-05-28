@@ -1,0 +1,316 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  font-size: 62.5%;
+}
+body {
+  background: #172031;
+}
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+}
+h2 {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 40%;
+  }
+}
+header {
+  height: 30%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  header {
+    height: 20%;
+  }
+}
+header .brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header .brand img {
+  width: 50px;
+  padding-right: 1%;
+}
+header .brand h1 {
+  color: whitesmoke;
+  font-size: 2rem;
+  width: 20%;
+}
+header nav {
+  height: 10vh;
+}
+header .nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+header .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  box-sizing: borderbox;
+}
+header h2 {
+  color: yellow;
+  text-align: center;
+  font-size: 1.8rem;
+}
+header h2 span {
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 500px) {
+  header .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  header nav {
+    position: relative;
+  }
+  header .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  header .nav-links {
+    position: fixed;
+    background: #5b78c7;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(20px at 90% -13%);
+    -webkit-clip-path: circle(20px at 90% -13%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  header .nav-links.open {
+    clip-path: circle(1200px at 90% -13%);
+    -webkit-clip-path: circle(1200px at 90% -13%);
+    pointer-events: all;
+  }
+  header .landing {
+    flex-direction: column;
+  }
+  header .nav-links li {
+    opacity: 0;
+  }
+  header .nav-links li a {
+    font-size: 1.4rem;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+    border-radius: 15%;
+    width: 10%;
+  }
+  header .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  header .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  header .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  header li.fade {
+    opacity: 1;
+  }
+}
+.Josh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Josh img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Josh img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
+.Tim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Tim img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Tim img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
+.Jeff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Jeff img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Jeff img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
+.Trevor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Trevor img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Trevor img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
+footer {
+  height: 80%;
+  width: 100%;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+}
+footer section {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer section .git {
+  width: 5vw;
+}
+@media (max-width: 500px) {
+  footer section .git {
+    background-color: #bfbfbf;
+  }
+}
+footer section .facebook {
+  width: 5vw;
+}
+@media (max-width: 800px) {
+  footer section .facebook {
+    background-color: #bfbfbf;
+  }
+}
