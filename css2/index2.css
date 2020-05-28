@@ -92,34 +92,31 @@ video {
 body {
   background: #172031;
 }
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+}
 h2 {
   font-size: 1.2rem;
   color: whitesmoke;
   padding: 2%;
 }
-p {
-  width: 20%;
-  font-size: 1rem;
-  color: whitesmoke;
-}
-@media (max-width: 800px) {
-  p {
-    width: 40%;
+@media (max-width: 500px) {
+  footer {
+    margin-top: 40%;
   }
 }
-img {
-  width: 20%;
-  height: 10%;
-}
-span {
-  font-size: 1.3rem;
-  text-decoration: underline;
-}
 header {
-  height: 10%;
+  height: 30%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 500px) {
+  header {
+    height: 20%;
+  }
 }
 header .brand {
   display: flex;
@@ -183,18 +180,17 @@ header h2 span {
   header .nav-links {
     position: fixed;
     background: #5b78c7;
-    background-color: #000024;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 90% -13%);
+    -webkit-clip-path: circle(100px at 90% -13%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
   header .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1200px at 90% -13%);
+    -webkit-clip-path: circle(1200px at 90% -13%);
     pointer-events: all;
   }
   header .landing {
@@ -223,23 +219,68 @@ header h2 span {
     opacity: 1;
   }
 }
+.Josh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Josh img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Josh img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
 .Tim {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Tim img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Tim img {
+    padding: 6%;
+    margin-top: 4%;
+  }
 }
 .Jeff {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.Jeff img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Jeff img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
 .Trevor {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.Trevor img {
+  width: 20%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .Trevor img {
+    padding: 6%;
+    margin-top: 4%;
+  }
+}
 footer {
-  height: 50%;
+  height: 80%;
   width: 100%;
   margin-bottom: auto;
   background-repeat: no-repeat;
@@ -251,9 +292,10 @@ footer {
   flex-direction: column;
 }
 footer section {
+  align-items: flex-end;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 footer section .git {

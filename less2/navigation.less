@@ -1,7 +1,10 @@
 header {
-  .size(10%,100%);
+  .size(30%,100%);
   background-repeat: no-repeat;
   background-size: cover;
+  @media @mobile {
+    height: 20%;
+  }
 
   .brand {
     .flex(flex-start, flex-start);
@@ -72,18 +75,18 @@ header {
     .nav-links {
       position: fixed;
       background: #5b78c7;
-      background-color: darken(blue, 43%);
-      height: 100vh;
+      // background-color: darken(blue, 43%);
+      height: 100%;
       width: 100%;
       flex-direction: column;
-      clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(100px at 90% -10%);
+      clip-path: circle(100px at 90% -13%);
+      -webkit-clip-path: circle(100px at 90% -13%);
       transition: all 1s ease-out;
       pointer-events: none;
     }
     .nav-links.open {
-      clip-path: circle(1000px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
+      clip-path: circle(1200px at 90% -13%);
+      -webkit-clip-path: circle(1200px at 90% -13%);
       pointer-events: all;
     }
     .landing {
@@ -91,6 +94,7 @@ header {
     }
     .nav-links li {
       opacity: 0;
+      
     }
     .nav-links li a {
       font-size: 1.4rem;
@@ -98,6 +102,7 @@ header {
       box-sizing: border-box;
       border-radius: 15%;
       width: 10%;
+     
     }
     .nav-links li:nth-child(1) {
       transition: all 0.5s ease 0.2s;
