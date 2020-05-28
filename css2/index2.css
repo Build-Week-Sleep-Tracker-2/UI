@@ -183,8 +183,8 @@ header h2 span {
     height: 100%;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -13%);
-    -webkit-clip-path: circle(100px at 90% -13%);
+    clip-path: circle(20px at 90% -13%);
+    -webkit-clip-path: circle(20px at 90% -13%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
