@@ -78,6 +78,7 @@ body {
         .size(20%, 20%);
         padding-top: 4%;
         line-height: 10%;
+        margin-bottom: 2%;
         
       }   
 
@@ -86,6 +87,7 @@ body {
 
  footer {
    .size(50%,100%);
+ 
      margin-bottom: auto;
      background-repeat: no-repeat;
      background-size: cover;
@@ -112,13 +114,20 @@ body {
       line-height: 3vh;
       font-weight: bolder;
       font-size: 1.2rem;
-
+     
       @media @tablet {
          .size(7%,40%);
          // box-shadow: 2px 2px 2px 2px rgba(22,18,24);
          background-color: darken(white, 25%);
          font-size: 1rem;
       }
+      @media(max-width: 1000px){
+         background-color: darken(white,25%);
+         border-radius: 10%;
+         height: 40%;
+         width: 50%;
+         margin: 2%;
+   }
      }
     section{
       .custom-layout(center, flex-end);
@@ -126,18 +135,21 @@ body {
       .git {
          
          width: 5vw;
-         @media @mobile{
-            background-color: darken(white,25%);
-         }
+      }
+      @media(max-width: 1000px){
+       background-color: darken(white,25%);
+ }
      }  
      .facebook{
       
       width: 5vw;
-      @media @tablet{
-         background-color: darken(white,25%);
-      }
-     }
-     
+   }
+   @media(max-width: 1000px){
+    background-color: darken(white,25%);
 }
  }
+    
+
+ 
+
 

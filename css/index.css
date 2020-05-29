@@ -90,121 +90,15 @@ video {
   font-size: 62.5%;
 }
 header {
-  height: 10%;
-  width: 310%;
+  height: 30%;
+  width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-header .brand {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-header .brand img {
-  width: 50px;
-  padding-right: 1%;
-}
-header .brand h1 {
-  color: whitesmoke;
-  font-size: 2rem;
-  width: 20%;
-}
-header nav {
-  height: 10vh;
-}
-header .nav-links {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-}
-header .nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  border: 1px solid whitesmoke;
-  box-sizing: borderbox;
-}
-header .nav-links li a h2 {
-  color: whitesmoke;
-  text-align: center;
-  font-size: 1.8rem;
-}
-@media (max-width: 800px) {
-  header .nav-links li a h2 {
-    padding: 3%;
+@media (max-width: 500px) {
+  header {
+    height: 20%;
   }
-}
-header .nav-links li a h2 span {
-  font-weight: bolder;
-  font-family: 'Poppins', sans-serif;
-}
-header .nav-links li a .line {
-  width: 30px;
-  height: 3px;
-  background: white;
-  margin-right: 5px;
-}
-header .nav-links li a nav {
-  position: relative;
-}
-header .nav-links li a .hamburger {
-  position: absolute;
-  cursor: pointer;
-  right: 5%;
-  top: 50%;
-  transform: translate(-5%, -50%);
-  z-index: 2;
-}
-header .nav-links li a .nav-links {
-  position: fixed;
-  background: #5b78c7;
-  background-color: #000024;
-  opacity: 0;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
-  clip-path: circle(100px at 90% -10%);
-  -webkit-clip-path: circle(100px at 90% -10%);
-  transition: all 1s ease-out;
-  pointer-events: none;
-}
-header .nav-links li a .nav-links.open {
-  clip-path: circle(1200px at 100% -10%);
-  -webkit-clip-path: circle(2000px at 100% -10%);
-  pointer-events: all;
-}
-header .nav-links li a .landing {
-  flex-direction: column;
-}
-header .nav-links li a .nav-links li {
-  opacity: 0;
-}
-header .nav-links li a .nav-links li a {
-  font-size: 1.4rem;
-  border: 1px solid whitesmoke;
-  box-sizing: border-box;
-  border-radius: 15%;
-  width: 10%;
-}
-header .nav-links li a .nav-links li:nth-child(1) {
-  transition: all 0.5s ease 0.2s;
-}
-header .nav-links li a .nav-links li:nth-child(2) {
-  transition: all 0.5s ease 0.4s;
-}
-header .nav-links li a .nav-links li:nth-child(3) {
-  transition: all 0.5s ease 0.6s;
-}
-header .nav-links li a li.fade {
-  opacity: 1;
-}
-header {
-  height: 10%;
-  width: 100%;
-  background-repeat: no-repeat;
 }
 header .brand {
   display: flex;
@@ -233,9 +127,10 @@ header .nav-links {
   margin-left: auto;
 }
 header .nav-links li a {
-  color: white;
+  color: #5b78c7;
   text-decoration: none;
   font-size: 1.3rem;
+  background: whitesmoke;
   box-sizing: borderbox;
 }
 header h2 {
@@ -246,11 +141,6 @@ header h2 {
 header h2 span {
   font-weight: bolder;
   font-family: "Poppins", sans-serif;
-}
-@media (max-width: 500px) {
-  header h2 span {
-    padding-right: 2%;
-  }
 }
 @media (max-width: 500px) {
   header .line {
@@ -266,6 +156,7 @@ header h2 span {
     position: absolute;
     cursor: pointer;
     right: 5%;
+    top: 50%;
     transform: translate(-5%, -50%);
     z-index: 2;
   }
@@ -310,6 +201,31 @@ header h2 span {
   header li.fade {
     opacity: 1;
   }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+button:hover {
+  animation: bounce 1s;
+}
+button:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 body {
   background: #172031;
@@ -385,6 +301,7 @@ body .flex-container1 .flex-item2 {
   width: 20%;
   padding-top: 4%;
   line-height: 10%;
+  margin-bottom: 2%;
 }
 footer {
   height: 50%;
@@ -427,6 +344,15 @@ footer p {
     font-size: 1rem;
   }
 }
+@media (max-width: 1000px) {
+  footer p {
+    background-color: #bfbfbf;
+    border-radius: 10%;
+    height: 40%;
+    width: 50%;
+    margin: 2%;
+  }
+}
 footer section {
   display: flex;
   justify-content: center;
@@ -436,16 +362,16 @@ footer section {
 footer section .git {
   width: 5vw;
 }
-@media (max-width: 500px) {
-  footer section .git {
+@media (max-width: 1000px) {
+  footer section {
     background-color: #bfbfbf;
   }
 }
-footer section .facebook {
+footer .facebook {
   width: 5vw;
 }
-@media (max-width: 800px) {
-  footer section .facebook {
+@media (max-width: 1000px) {
+  footer {
     background-color: #bfbfbf;
   }
 }
