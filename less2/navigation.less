@@ -32,18 +32,19 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
+    
   }
 
   .nav-links li a {
-    color: white;
+    color: #5b78c7;
     text-decoration: none;
     font-size: 1.3rem;
-
+    background: @smoke;
     box-sizing: borderbox;
   }
 
   h2 {
-    color: yellow;
+    color: @smoke;
     text-align: center;
     font-size: 1.8rem;
     span {
@@ -117,4 +118,30 @@ header {
       opacity: 1;
     }
   }
+}
+button {
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+}
+button:hover {
+  animation: bounce 1s;
+}
+button:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
