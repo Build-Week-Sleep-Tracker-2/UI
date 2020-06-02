@@ -5,48 +5,60 @@ header {
   @media @mobile {
     height: 20%;
   }
+ 
+  
 
   .brand {
     .custom-layout(flex-start, flex-start);
 
     img {
-      width: 50px;
+      width: 62px;
+      height: 62px;
       padding-right: 1%;
     }
     h1 {
       color: @smoke;
-      font-size: 2rem;
+      font-size: 5rem;
       width: 20%;
       // text-align: top-right;
     }
   }
   nav {
     height: 10vh;
+    padding-left: 2%;
+    
   }
 
   .nav-links {
     display: flex;
     list-style: none;
     width: 50%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
+    height: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
     margin-left: auto;
+    
     
   }
 
   .nav-links li a {
-    color: #5b78c7;
+    color: @smoke;
     text-decoration: none;
-    font-size: 1.3rem;
-    background: @smoke;
-    box-sizing: borderbox;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    box-sizing: border-box;
+    margin: .5%;
+    .home {
+      margin: 8% !important;
+      }
+    
+    
   }
 
   h2 {
     color: @smoke;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 3rem;
     span {
       font-weight: bolder;
 
@@ -80,6 +92,7 @@ header {
       height: 100%;
       width: 100%;
       flex-direction: column;
+      
       clip-path: circle(20px at 90% -13%);
       -webkit-clip-path: circle(20px at 90% -13%);
       transition: all 1s ease-out;
@@ -89,9 +102,15 @@ header {
       clip-path: circle(1200px at 90% -13%);
       -webkit-clip-path: circle(1200px at 90% -13%);
       pointer-events: all;
+      align-items: center;
+      justify-content: space-evenly;
+     
+
     }
     .landing {
       flex-direction: column;
+     
+     
     }
     .nav-links li {
       opacity: 0;
@@ -99,11 +118,11 @@ header {
     }
     .nav-links li a {
       font-size: 1.4rem;
-      border: 1px solid @smoke;
+      // border: 1px solid @smoke;
       box-sizing: border-box;
       border-radius: 15%;
       width: 10%;
-     
+      
     }
     .nav-links li:nth-child(1) {
       transition: all 0.5s ease 0.2s;
@@ -120,6 +139,10 @@ header {
   }
 }
 button {
+  margin: 1%;
+  background-color:#020745;
+  border: #020957;
+ 
   @keyframes bounce {
     0%, 20%, 60%, 100% {
       -webkit-transform: translateY(0);
