@@ -21,6 +21,9 @@ header {
       font-size: 5rem;
       width: 20%;
       // text-align: top-right;
+      @media @mobile{
+        font-size: 4rem;
+      }
     }
   }
   nav {
@@ -140,8 +143,10 @@ header {
 }
 button {
   margin: 1%;
-  background-color:#020745;
+  background-color: transparent;
+ 
   border: #020957;
+  
  
   @keyframes bounce {
     0%, 20%, 60%, 100% {

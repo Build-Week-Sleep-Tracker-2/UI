@@ -115,6 +115,11 @@ header .brand h1 {
   font-size: 5rem;
   width: 20%;
 }
+@media (max-width: 500px) {
+  header .brand h1 {
+    font-size: 4rem;
+  }
+}
 header nav {
   height: 10vh;
   padding-left: 2%;
@@ -211,7 +216,7 @@ header h2 span {
 }
 button {
   margin: 1%;
-  background-color: #020745;
+  background-color: transparent;
   border: #020957;
 }
 @keyframes bounce {
