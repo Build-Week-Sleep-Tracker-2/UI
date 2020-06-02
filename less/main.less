@@ -11,24 +11,11 @@ body {
      .flex-item1 {
       .size(20%,20%);
       padding-top: 2%;
+      @media @mobile{
+         .size(80%,80%);
+        };
      }
-     .flex-item2 {
-      font-size: 1.4rem;
-      color: @smoke;
-      .size(45%,20%);
-     padding: 6%;
-     font-size: 1.4rem;
-     
-
-   
-     
-      @media @tablet {
-         .size(7%,40%);
-        font-size: 1rem;
-         
-         
-   };
-     }
+    
   
 
    
@@ -36,6 +23,7 @@ body {
    }
 }
      .middle{
+        display: flex;
         text-align: center;
         width: 50%;
         color: @smoke;
@@ -44,8 +32,10 @@ body {
         font-family: 'Poppins', sans-serif;
         padding-top: 3%;
         @media @tablet {
-         .size(7%,60%);
-        font-size: 1rem;
+        font-size: 1.5rem;
+        margin-right: 50%;
+        width: 50%;
+        
 
         }
       
@@ -53,37 +43,84 @@ body {
  
  .flex-container2 {
      display: flex;
-     justify-content: center;
-     align-content: center;
-
-     .flex2-item1{
-      .size(20%,20%);
-        margin-top: 4%;
-        padding-top: 1%;
-
+     justify-content: flex-start;
+     align-items: center;
+     border: 1px solid orange;
+     flex-direction: column;
+     flex-wrap: wrap;
+   // display: grid;
+   // grid-template-rows: 1fr;
+   // grid-template-columns: 1fr;
+   //   height: 80%;
+     @media @mobile {
+        .size(100%, 100vw);
+        padding: 0;
      }
-     p {
-        font-size: 1.4rem;
-         color: @smoke;
-         .size(45%,20%);
-      //   line-height: 100%;
-        padding: 6%;
-        font-family: 'Poppins', sans-serif;
-        @media @tablet {
-           font-size: 1rem;
+     
+     div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        @media @mobile {
+         //   height: 100vh;
+           text-align: center;
+           align-items: center;
+           justify-content: apace-around;
+           flex-direction: column;
+           
         }
         
      }
+
+     .flex2-item1{
+      .size(45%,45%);
+        margin-top: 4%;
+        padding-top: 1%;
+        @media @mobile{
+         .size(100%,100%);
+        };
+
+     }
+     p {
+      font-size: 1.4rem;
+       color: @smoke;
+       .size(45%,20%);
+    //   line-height: 100%;
+      padding: 6%;
+      font-family: 'Poppins', sans-serif;
+      
+      @media @tablet {
+         font-size: 1rem;
+         width:70%;
+      }
+   }
      .flex2-item2 {
-        .size(20%, 20%);
+        .size(30%, 35%);
         padding-top: 4%;
         line-height: 10%;
         margin-bottom: 2%;
+        @media @mobile{
+         .size(100%,100%);
+        };
         
       }   
 
      }
- 
+     .final {
+      font-size: 3rem  !important;
+      width: 80% !important;
+      text-align: center;
+       color: @smoke;
+      line-height: 80% ;
+      // margin-right: 30%;
+      // padding: 6%;
+      font-family: 'Poppins', sans-serif;
+      // border: 1px solid red;
+      @media @tablet {
+         font-size: 1rem;
+      }
+      
+   }
 
  footer {
    .size(50%,100%);
